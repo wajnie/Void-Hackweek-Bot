@@ -16,9 +16,8 @@ module.exports.run = async (bot, message, args) => {
         .addField("❯ Commands", `List of available. \nFor command description, you can use \`${prefix}support <command>\`. `)
         .addField("❯ Mod", "`kick` `ban` `mute` `unmute` `warn` `unwarn`")
         .addField("❯ Config", "`mutedrole` `setprefix`")
-    message.channel.send({
-        embed
-    })
+        .addField("❯ Other", "`invitelb`")
+    message.channel.send(embed)
 }
 module.exports.help = {
     name: "help"

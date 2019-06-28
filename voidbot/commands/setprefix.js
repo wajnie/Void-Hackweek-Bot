@@ -1,11 +1,8 @@
 const Discord = require("discord.js");
-
 const fs = require("fs");
 module.exports.run = async (bot, message, args) => {
 
-
-
-  if(!message.member.hasPermission("MANAGE_CHANNELS")){
+  if (!message.member.hasPermission("MANAGE_CHANNELS")){
  const lumbed = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL)
 	.setDescription(`Missing permission \`MANAGE_CHANNELS\` \n\nUser doesn't have Manage Channels permission. Access denied.`)
@@ -43,7 +40,5 @@ module.exports.run = async (bot, message, args) => {
   message.channel.send(sEmbed);
 }
 module.exports.help = {
-
   name: "setprefix"
-
 }

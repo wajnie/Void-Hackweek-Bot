@@ -124,7 +124,13 @@ bot.on("message", async message => {
             .addField('❯ Description', 'Shows top 10 most used invites, and the invite creator.')
         return message.channel.send(embed);
     }
-
+    
+    if (message.content.toLowerCase().match(prefix + 'support loc')) {
+        embed.setDescription('\`lock\`')
+            .addField('❯ Description', "Locks the channel that message has been sent. Changes Send Message permission of server's default role to true or false.")
+        return message.channel.send(embed);
+    }
+    
     if (message.content.match('594084114924306437')) {
         if (message.author.bot)
             return;

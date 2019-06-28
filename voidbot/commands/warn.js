@@ -53,13 +53,13 @@ module.exports.run = async (bot, message, args) => {
         if (!memberr.kickable)
             return message.channel.send(`I can't kick **${use.tag}** because of his \`3\` warns. Maybe he is a higher rank than me, or i don't have enough permissions.`);
         message.channel.send(`**${user.tag}** has been kicked for having \`3\` warns`)
-        message.guild.member(warnUser).kick("3 warns")
+        message.guild.member(warnUser).kick("3 warns");
     }
     if (warns[warnUser.id].warns == 6) {
         if (!memberr.bannable)
             return message.channel.send(`I can't ban ${use.tag}** because of his \`6\` warns. Maybe he is a higher rank than me, or i don't have enough permissions.`);
         message.channel.send(`**${user.tag}** has been banned for having \`6\` warns!`)
-        message.guild.member(warnUser).ban("6 warns")
+        message.guild.member(warnUser).ban("6 warns");
     }
 }
 module.exports.help = {

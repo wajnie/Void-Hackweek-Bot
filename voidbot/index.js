@@ -111,7 +111,14 @@ bot.on("message", async message => {
             .addField('❯ Examples', `${prefix}setprefix! \n${prefix}setprefix ? \n**Wrong**:\nustawprefix 123 321`)
         return message.channel.send(embed);
     }
-
+    
+    if (message.content.toLowerCase().match(prefix + 'support userro')) {
+        embed.setDescription('\`userrole <exact name of the role>\`')
+            .addField('❯ Description', 'Shows users that have given role. You have to get exact name of the role, even if it has emoji in it or UPPERCASE LETTERS.')
+            .addField('❯ Examples', `${prefix}userrole guests :x: \n${prefix}userrole Guests :white_check_mark:`)
+        return message.channel.send(embed);
+    }
+    
     if (message.content.toLowerCase().match(prefix + 'support invite')) {
         embed.setDescription('\`lbinvite\`')
             .addField('❯ Description', 'Shows top 10 most used invites, and the invite creator.')

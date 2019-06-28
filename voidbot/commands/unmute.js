@@ -38,7 +38,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(`User is not muted.`)
         return message.channel.send(embedd)
     }
-
+   
     const embed = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL)
         .setColor('7FFF00')

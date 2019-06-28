@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
     const tryembed = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL)
         .setColor('32CD32')
-        .addField('Successfully created role.', 'Created \`muted\` role with suitable permissions.')
+        .addField('Successfully created role.', 'Created \`muted\` role with correct permissions.')
     message.channel.send('`Creating muted role...`')
         .then((msg) => {
             setTimeout(function() {

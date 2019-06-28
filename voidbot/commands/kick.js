@@ -43,5 +43,5 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send(`Successfully kicked **${use.tag}** from the server`) + memberr.kick(reason)
 }
 module.exports.help = {
-    name: "ban"
+    name: "kick"
 }

@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
     if (!message.member.hasPermission("KICK_MEMBERS")) {
         const notkidkembed = new Discord.RichEmbed()
             .setAuthor(message.author.tag, message.author.avatarURL)
-            .setDescription(`Missing \`KICK_MEMBERS\` permission \n\nUser doesn't have enough permissions to kick.`)
+            .setDescription(`Missing \`KICK_MEMBERS\` permission\n\nUser doesn't have enough permissions to kick.`)
             .setColor('ff0000')
         return message.channel.send(notkidkembed)
     }

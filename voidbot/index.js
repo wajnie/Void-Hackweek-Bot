@@ -119,6 +119,14 @@ bot.on("message", async message => {
         return message.channel.send(embed);
     }
     
+    
+    if (message.content.toLowerCase().match(prefix + 'support clear')) {
+        embed.setDescription('\`clear <amount>\`')
+            .addField('❯ Description', 'Clears messages. Not more than 100.')
+            .addField('❯ Examples', `${prefix}clear 100`)
+        return message.channel.send(embed);
+    }
+    
     if (message.content.toLowerCase().match(prefix + 'support invite')) {
         embed.setDescription('\`lbinvite\`')
             .addField('❯ Description', 'Shows top 10 most used invites, and the invite creator.')

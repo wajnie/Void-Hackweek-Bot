@@ -44,13 +44,7 @@ bot.on("message", async message => {
         prefixes[message.guild.id] = {
 
             prefixes: config.prefix
-
-
-
         };
-
-
-
     }
 
     const prefix = prefixes[message.guild.id].prefixes;

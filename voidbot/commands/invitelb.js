@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     }
     if (message.author.bot) return;
     let invites = await message.guild.fetchInvites()
-    if (!invites) return message.channel.send("**There's no invite**")
+    if (!invites) return message.channel.send("**There's no invites**")
     invites = invites.array();
     arraySort(invites, 'uses', {
         reverse: true

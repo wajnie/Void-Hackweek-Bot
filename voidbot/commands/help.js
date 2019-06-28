@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
         };
     }
     let prefix = prefixes[message.guild.id].prefixes;
-    // ❯ 
+    // ❯ symbol
     const embed = new Discord.RichEmbed()
         .setColor(0xFFFF)
         .addField("❯ Commands", `List of available. \nFor command description, you can use \`${prefix}support <command>\`. `)

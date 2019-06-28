@@ -1,13 +1,13 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const fs = require("fs");
 module.exports.run = async (bot, message, args) => {
-  let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"));
+    let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"));
     let memberr = message.mentions.members.first();
     const use = message.mentions.users.first();
-    
+
     if (message.content.match(message.author.id))
         return message.reply("**Aww, come on. Don't do this to yourself**");
-        
+
     if (message.author.bot) return;
 
     let user = message.mentions.users.first();

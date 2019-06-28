@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
 
     const errerembed2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL)
-        .setDescription(`Missing \`[user]\` argument \n\nCorrect usage:\n\`kcik | [user] \` `)
+        .setDescription(`Missing \`[user]\` argument \n\nCorrect usage:\n\`kick | [user] \` `)
 	.setColor('ff0000')
 
      const errerembed = new Discord.RichEmbed()

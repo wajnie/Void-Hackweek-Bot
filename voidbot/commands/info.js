@@ -9,18 +9,18 @@ module.exports.run = async (bot, message, args) => {
         warns: 0
     };
     let wLvl = warns[wUser.id].warns;
-    
+
     const errerembed2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL)
         .setDescription(`Missing \`[user]\` argument \n\nCorrect usage:\n\`kick | [user] \` `)
-	.setColor('ff0000')
-    
+        .setColor('ff0000')
+
     if (!args[0]) return message.channel.send(errerembed2)
     const embed = new Discord.RichEmbed()
         .setColor('ff0000')
         .setDescription(`**<@${wUser.id}>'s Warn Status**\n\`${wLvl}\` Warns`)
         .setFooter(memberr.tag)
-            message.channel.send('**Getting information...**').then((msg) => {
+    message.channel.send('**Getting information...**').then((msg) => {
         setTimeout(function() {
             msg.edit(embed);
         }, 300)

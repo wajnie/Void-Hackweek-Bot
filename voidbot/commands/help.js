@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     const embed = new Discord.RichEmbed()
         .setColor(0xFFFF)
         .addField("❯ Commands", `List of available. \nFor command description, you can use \`${prefix}support <command>\`. `)
-        .addField("❯ Mod", "`kick` `ban` `mute` `unmute` `warn` `unwarn`")
+        .addField("❯ Mod", "`kick` `ban` `mute` `unmute` `warn` `unwarn` `lock`")
         .addField("❯ Config", "`mutedrole` `setprefix`")
         .addField("❯ Other", "`invitelb` `info`")
     message.channel.send(embed)

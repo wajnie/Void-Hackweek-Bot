@@ -87,6 +87,11 @@ bot.on("message", async message => {
             .addField('❯ Examples', `${prefix}warn <@${message.author.id}> breaking rules \n${prefix}warn <@${message.author.id}> swearing`)
         return message.channel.send(embed);
     }
+    if (message.content.toLowerCase().match(prefix + 'support inf')) {
+        embed.setDescription('\`info <user>\`')
+            .addField('❯ Description', "Shows user's amount of warns")
+        return message.channel.send(embed);
+    }
     if (message.content.toLowerCase().match(prefix + 'support unwarn')) {
         embed.setDescription('\`unwarn <user> <... reason>\`')
             .addField('❯ Description', 'Deletes a warn from an user. The number can be negative. 3 warns equals kick, 6 equals ban')

@@ -10,6 +10,6 @@ It's an API that can accept other arguments than milliseconds only. Example: `12
 ### array-sort
 It's used for `invitelb` command. Sorts arrays.
 ## Quick Introduction
-The bot itself has 9 commands. If you decide to mention the bot, it will show basic information like server prefix, how you can change it, very basic stuff. It took me 3 days to make it. Suddenly the bot isn't hosted, but you can add that code to your bot. It should work.
+The bot itself is no copyrighted. You can steall all my code if you want. If you decide to mention the bot, it will show basic information like server prefix, how you can change it, very basic stuff. It took me 3 days to make it. Suddenly the bot isn't hosted, but you can add that code to your bot. It should work.
 
 **If any problems occur, DM me: wajnie#7054**

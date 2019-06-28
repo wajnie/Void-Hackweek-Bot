@@ -115,7 +115,7 @@ bot.on("message", async message => {
     if (message.content.toLowerCase().match(prefix + 'support userro')) {
         embed.setDescription('\`userrole <exact name of the role>\`')
             .addField('❯ Description', 'Shows users that have given role. You have to get exact name of the role, even if it has emoji in it or UPPERCASE LETTERS.')
-            .addField('❯ Examples', `${prefix}userrole guests :x: \n${prefix}userrole Guests :white_check_mark:`)
+            .addField('❯ Examples', `${prefix}userrole guests :x: \n\`if the role is named Guests, you can't just put guests. The arguments doesn't match\` \n\n${prefix}userrole Guests :white_check_mark:\n\`That's correctly used command\` `)
         return message.channel.send(embed);
     }
     

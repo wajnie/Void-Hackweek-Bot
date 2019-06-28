@@ -32,11 +32,10 @@ bot.on("message", async message => {
     var usercreatedat = message.createdAt.toString().split(' ')
     let lastActivity = message.author.username
     console.log(`[${usercreatedat[1]} ${usercreatedat[2]} ${usercreatedat[3]} ${usercreatedat[4]}]\n[${lastActivity}]: [${message.content}]\nChannel: [${message.channel.name}]\nID:[${message.author.id}]\n`);
-    /// koniec logów
+
     if (message.channel.type === "dm") {
         return;
     }
-    //const prefix = "="
     const prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
 
     if (!prefixes[message.guild.id]) {

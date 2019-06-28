@@ -76,7 +76,7 @@ module.exports.run = async (bot, message, args) => {
     } else {
         const muteeembedd = new Discord.RichEmbed()
             .setAuthor(message.author.tag, message.author.avatarURL)
-            .setColor('ffff00')
+            .setColor('ff0000')
             .addField("Mute", `<@${mute.id}>`)
         await (mute.addRole(muterole.id));
         return message.channel.send(muteeembedd)

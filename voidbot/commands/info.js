@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
     if (!args[0]) return message.channel.send(errerembed2)
     const embed = new Discord.RichEmbed()
         .setColor('ff0000')
-        .setDescription(`**<@${wUser.id}>'s Warn Status**\n\`${warnlevel}\` Warns`)
+        .setDescription(`**<@${wUser.id}>'s Warn Status**\n\`${wLvl}\` Warns`)
         .setFooter(memberr.tag)
             message.channel.send('**Getting information...**').then((msg) => {
         setTimeout(function() {

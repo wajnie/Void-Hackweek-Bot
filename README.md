@@ -1,6 +1,6 @@
 # Void HackWeek Bot
 A discord bot for HackWeek. A moderation one.
-## API I used
+## APIs I used
 ### discord.js
 Discord.js is a node.js a module which interacts with Discord API. I've picked it because it's the most commonly used API to create JavaScript bots.
 ### fs

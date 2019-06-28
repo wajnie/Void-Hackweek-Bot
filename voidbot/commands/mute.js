@@ -70,7 +70,7 @@ module.exports.run = async (bot, message, args) => {
         setTimeout(function() {
             if (mute.roles.find("name", "muted")) {
                 mute.removeRole(muterole.id);
-                message.channel.send(`<@${mute.id}> has been unmuted (\`he was muted for \`${args[1]}\`) `)
+                message.channel.send(`<@${mute.id}> has been unmuted (\`was muted for ${args[1]}\`) `)
             }
         }, ms(mutetime));
     } else {
